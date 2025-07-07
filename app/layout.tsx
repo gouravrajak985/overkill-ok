@@ -1,10 +1,10 @@
 import './globals.css';
-import type { Metadata } from 'next/metadata';
+import type { Metadata } from 'next';
 import { Orbitron, Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Navbar } from '@/components/navigation/navbar';
 import { Providers } from '@/components/providers';
 import { Toaster } from '@/components/ui/sonner';
+import { ConditionalNavbar } from '@/components/navigation/conditional-navbar';
 
 const orbitron = Orbitron({ 
   subsets: ['latin'],
@@ -39,7 +39,7 @@ export default function RootLayout({
             forcedTheme="dark"
           >
             <div className="relative flex min-h-screen flex-col">
-              <Navbar />
+              <ConditionalNavbar />
               <main className="flex-1">
                 {children}
               </main>
