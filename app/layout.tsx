@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'GameNet - Gaming Social Platform',
+  title: 'OverKill - Gaming Social Platform',
   description: 'Connect, compete, and collaborate with gamers worldwide',
 };
 

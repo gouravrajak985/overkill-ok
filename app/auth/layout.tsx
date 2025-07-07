@@ -25,7 +25,7 @@ export default function AuthLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${orbitron.variable} ${inter.variable} font-sans min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900`}>
+      <body className={`${orbitron.variable} ${inter.variable} font-sans h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900`}>
         <Providers>
           <ThemeProvider
             attribute="class"
@@ -33,8 +33,8 @@ export default function AuthLayout({
             enableSystem={false}
             forcedTheme="dark"
           >
-            <div className="relative flex min-h-screen flex-col">
-              <main className="flex-1">
+            <div className="relative h-screen overflow-y-auto">
+              <main className="h-full">
                 {children}
               </main>
             </div>

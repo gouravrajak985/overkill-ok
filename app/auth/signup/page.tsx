@@ -85,14 +85,14 @@ export default function SignUp() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-md space-y-8"
+        className="w-full max-w-md"
       >
-        <div className="text-center">
+        <div className="text-center mb-6">
           <h2 className="text-3xl font-bold text-white font-orbitron">
             Join GameNet
           </h2>
@@ -101,9 +101,9 @@ export default function SignUp() {
           </p>
         </div>
 
-        <GamingCard className="p-8">
+        <GamingCard className="p-6">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div>
                 <Label htmlFor="name" className="text-white">Full Name</Label>
                 <div className="relative mt-1">
@@ -213,7 +213,7 @@ export default function SignUp() {
             </Button>
           </form>
 
-          <div className="mt-6">
+          <div className="mt-4">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-gray-600" />
@@ -223,7 +223,7 @@ export default function SignUp() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-1 gap-3">
+            <div className="mt-4 grid grid-cols-1 gap-3">
               <Button
                 type="button"
                 variant="outline"
@@ -236,7 +236,7 @@ export default function SignUp() {
             </div>
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-4 text-center">
             <p className="text-sm text-gray-400">
               Already have an account?{' '}
               <Link href="/auth/signin" className="text-purple-400 hover:text-purple-300">

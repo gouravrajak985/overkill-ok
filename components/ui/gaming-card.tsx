@@ -2,8 +2,9 @@
 
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import type { ComponentPropsWithoutRef } from 'react';
 
-interface GamingCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface GamingCardProps extends ComponentPropsWithoutRef<typeof motion.div> {
   glowColor?: 'purple' | 'cyan' | 'green' | 'orange';
   hover?: boolean;
 }
